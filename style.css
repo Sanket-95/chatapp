@@ -1,0 +1,123 @@
+/* style.css */
+body{
+    /* background-color: rgb(218, 253, 215); */
+    background-image: url('asests/glass.PNG');
+    background-size: cover; /* Cover the entire page */
+    background-position: center;
+   
+}
+.logo{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+/* .container{
+    max-width: 955px;
+    background-color: rgb(89, 185, 198);
+    margin:auto;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+} */
+.container {
+    max-width: 955px;
+    background-color: rgb(89, 185, 198);
+    margin:auto;
+    height: 70vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+
+    background-image: url('asests/APPBG.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center;
+}
+.message {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 200px;
+}
+.left {
+    align-self: flex-start;
+    background-color: #f3f3f3;
+}
+.right {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+ 
+
+
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+}
+#messageInp{
+    width:92%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 34px;
+
+    background-color: #F48224;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition:all 0.3s ease 0s;
+  
+}
+.btn.active:hover{
+    color: #c79393;
+}
+@media screen and (max-width: 575px){
+    .btn{
+        margin-bottom: 50px !important;
+    }
+} 
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+        margin: 5px;
+        height: 80vh; /* Adjust height for better scrolling */
+        overflow-y: auto;
+    }
+    #messageInp, .btn {
+        width: 90%; /* Make input and button wider to fit small screens */
+        font-size: 16px; /* Adjust font size for readability */
+    }
+    .message {
+        max-width: 100%; /* Allow messages to take more space */
+        padding: 5px; /* Adjust padding for space efficiency */
+    }
+    .logo {
+        width: 40px; /* Adjust logo size for small screens */
+        height: 40px;
+    }
+}
